@@ -11,12 +11,14 @@ import com.example.lab_5_iot.R;
 
 public class ImageAdapter extends BaseAdapter {
     private Context context;
-    public ImageAdapter (Context context){
+    private int[] pos;
+    public ImageAdapter (Context context, int pos[]){
         this.context = context;
+        this.pos = pos;
     }
     @Override
     public int getCount() {
-        return 0;
+        return pos.length;
     }
 
     @Override

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_game"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -26,7 +27,9 @@
             android:fontFamily="casual"
             android:text="Bienvenido a SFTGAMES"
             android:textAlignment="center"
-            android:textSize="48sp" />
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -37,7 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Stf-Puzzle SV" />
+            android:text="Stf-Puzzle SV"
+            android:textColor="#000000" />
 
         <Space
             android:layout_width="match_parent"
@@ -48,7 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:text="Stf-Memory Classic" />
+            android:text="Stf-Memory Classic"
+            android:textColor="#000000" />
 
     </LinearLayout>
 

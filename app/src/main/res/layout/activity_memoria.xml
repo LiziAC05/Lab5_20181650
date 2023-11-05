@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_game"
     tools:context=".MemoriaActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="405dp"
-        android:layout_height="143dp"
+        android:layout_width="340dp"
+        android:layout_height="112dp"
         android:layout_marginTop="64dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,38 +24,50 @@
             android:fontFamily="casual"
             android:text="El Juego de la Memoria"
             android:textAlignment="center"
-            android:textSize="34sp"
+            android:textColor="#000000"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/txtImagSelec"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:text="Total de Imagenes Seleccionadas: "
-            android:textAlignment="center"
-            android:textSize="20sp" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnAgregaImagen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:text="Agregar Imágenes"
-            android:textAlignment="center"
-            android:textSize="14sp" />
+            <Button
+                android:id="@+id/btnRandom"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Aleatorizar"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnAyuda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Ayuda"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
     </LinearLayout>
 
     <GridView
         android:id="@+id/gridMemo"
-        android:layout_width="285dp"
-        android:layout_height="366dp"
+        android:layout_width="348dp"
+        android:layout_height="550dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="64dp"
+        android:layout_marginBottom="128dp"
         android:numColumns="3"
         android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></GridView>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.228"></GridView>
 </androidx.constraintlayout.widget.ConstraintLayout>
