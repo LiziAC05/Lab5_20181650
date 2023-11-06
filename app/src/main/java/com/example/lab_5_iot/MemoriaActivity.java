@@ -68,6 +68,7 @@ public class MemoriaActivity extends AppCompatActivity {
                         if (currentPos >= 0 && currentPos < gridView.getChildCount()) {
                             ((ImageView) gridView.getChildAt(currentPos)).setImageResource(R.drawable.question);
                         }
+                        ((ImageView) currImageView).setImageResource(R.drawable.question);
                         isProcessing = false;
                         gridView.setEnabled(true); // Reactiva la interacción con el GridView.
                     }, 1000); // Cambia este valor si deseas un período de tiempo diferente.
